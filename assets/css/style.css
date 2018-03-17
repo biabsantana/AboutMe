@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#general{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image{
+    background-size: cover; 
+    height: 600px;
+    background-position: top;
+}
+
+.academics{
+    text-align: justify;
+    margin-top: 3vw;
+    margin-left: 30vw;
+    font-size: 2.8vw;
+    line-height: 50px;
+}
+
+.ulLine{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:grey;
+    flex-wrap: wrap;
+}
+
+.interests{
+    padding-left: 10px;
+    font-size: 2.5vw;
+    margin-top: 3vw;
+}
+
+.activity{
+    text-align: center;
+    margin-top: 3vw;
+    font-size: 2.5vw;
+}
+
+.activityTitle{
+    display:inline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.activityText{
+    font-size: 2vw;
+}
+
+.icons{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#iconStyle{
+    color:grey;
+    margin-left: 1vw;
+    font-size:5vw;
+}
+
+
+.head{
+    position: relative;
+    text-align: center;
+}
+
+.titleMobile{
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleMobileBottom{
+    display:none;       
+}
+
+.h1title{
+    text-transform: uppercase;
+    color:white;
+}
+
+.h2title{
+    color:white;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    #general{
+        flex-direction: row;
+    }
+
+    .titleMobile{
+        display: none;
+    }
+
+    .image{
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .bottom{
+        padding: 100px 60px;
+        overflow: scroll;
+    }
+
+    .figure{
+        height: 100%;
+    }
+    
+    .academics{
+        margin-left: 5vw;
+        font-size: 1.5vw;
+        line-height: 30px;
+    }
+
+    .interests{
+        font-size: 1.5vw;
+        margin-left: 1vw;
+    }
+
+    .activityTitle{
+        font-size: 1.5vw;
+    }
+
+    .activityText{
+        font-size: 1.5vw;
+    }
+
+    #iconStyle{
+        font-size:3vw;
+    }
+
+    .titleMobileBottom{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+        margin-left: 5vw;
+    }
+}
